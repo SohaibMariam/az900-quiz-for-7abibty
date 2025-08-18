@@ -729,63 +729,233 @@
           reason: "Azure AD is used for identity and access management in the cloud."
         }
       ],
-      fr: [
+     fr: [
         {
-          q: "Laquelle des affirmations suivantes est une caractéristique du cloud public ?",
-          opts: [
-            "Vous possédez le matériel",
-            "Vous êtes responsable de la gestion du centre de données",
-            "Les ressources sont détenues et exploitées par un fournisseur de cloud tiers",
-            "Il est uniquement accessible depuis votre réseau local"
-          ],
-          answer: 2,
-          reason: "Dans un modèle de cloud public, les ressources sont gérées par un fournisseur comme Microsoft Azure. L'utilisateur y accède via Internet."
-        },
-        {
-          q: "Lequel modèle de service cloud vous offre le plus haut niveau de contrôle sur l'infrastructure sous-jacente ?",
-          opts: [
-            "SaaS",
-            "PaaS",
-            "IaaS",
-            "Sans serveur (Serverless)"
-          ],
-          answer: 2,
-          reason: "Avec IaaS, vous gérez les machines virtuelles, le stockage et le réseau. Microsoft gère le matériel physique et la virtualisation."
-        },
-        {
-          q: "Lequel est le but des régions Azure ?",
-          opts: [
-            "Regrouper les abonnements",
-            "Définir les niveaux de tarification",
-            "Fournir des emplacements géographiques pour les ressources",
-            "Organiser les groupes de gestion"
-          ],
-          answer: 2,
-          reason: "Les régions Azure sont des zones géographiques contenant des centres de données pour placer les ressources selon les besoins."
-        },
-        {
-          q: "Lequel outil permet d’estimer le coût d’une solution sur Azure ?",
-          opts: [
-            "Azure Portal",
-            "Azure Monitor",
-            "Calculateur de prix Azure",
-            "Azure Cost Management"
-          ],
-          answer: 2,
-          reason: "Le Calculateur de prix Azure est un outil gratuit pour estimer les coûts avant le déploiement de ressources."
-        },
-        {
-          q: "Lequel service Azure est utilisé pour gérer les identités des utilisateurs et les accès ?",
-          opts: [
-            "Azure Firewall",
-            "Azure Active Directory (Azure AD)",
-            "Azure DevOps",
-            "Azure Key Vault"
-          ],
+          q: "Quel est le principal bénéfice d’Azure en tant que solution cloud ?",
+          opts: ["Accès limité","Facturation à l’usage","Uniquement pour Windows","Gratuité totale"],
           answer: 1,
-          reason: "Azure AD permet de gérer les utilisateurs, groupes et autorisations dans le cloud Microsoft."
-        }
-      ],
+          reason: "Azure propose la facturation selon la consommation réelle des services utilisés."
+        },
+        {
+          q: "Qu’est-ce qu’un service IaaS sur Azure ?",
+          opts: ["Hébergement d’infrastructure virtuelle","Développement métier","Application prête à l’emploi","Sauvegarde hors site"],
+          answer: 0,
+          reason: "IaaS signifie Infrastructure en tant que service, où les ressources comme les VM sont administrées par l’utilisateur."
+        },
+        {
+          q: "Parmi ces choix, lequel est un service PaaS sur Azure ?",
+          opts: ["Azure SQL Database","Azure VM","Azure Blob Storage","Azure Active Directory"],
+          answer: 0,
+          reason: "PaaS héberge des plateformes pour exécuter ou développer des applications sans gérer l’infrastructure."
+        },
+        {
+          q: "Quel service Azure gère l’authentification et les identités ?",
+          opts: ["Azure Storage","Azure Blob","Azure Active Directory","Azure Cost Management"],
+          answer: 2,
+          reason: "Azure Active Directory centralise la gestion des identités et autorisations."
+        },
+        {
+          q: "Qu’est-ce qu’un cloud hybride ?",
+          opts: ["L’usage exclusif de serveurs physiques","La combinaison de ressources locales et cloud public","Seules ressources cloud","Un stockage local"],
+          answer: 1,
+          reason: "Hybride = ressources sur site et dans le cloud."
+        },
+        {
+          q: "Quel composant Azure permet la supervision et la gestion ?",
+          opts: ["Azure Monitor","Azure VM","Azure SQL","Azure DNS"],
+          answer: 0,
+          reason: "Azure Monitor surveille, collecte et analyse les métriques et logs."
+        },
+        {
+          q: "Où retrouver la facturation et coûts détaillés dans Azure ?",
+          opts: ["Azure Portal","Azure Active Directory","Azure Cost Management","Azure DevOps"],
+          answer: 2,
+          reason: "Ce service fournit des rapports sur les coûts et la consommation."
+        },
+        {
+          q: "Quel est le service de stockage d'objets non structurés ?",
+          opts: ["Azure Table","Azure Blob","Azure DNS","Azure Kubernetes Service"],
+          answer: 1,
+          reason: "Azure Blob est conçu pour stocker des données non structurées."
+        },
+        {
+          q: "Quel est l’outil pour déployer rapidement des machines virtuelles ?",
+          opts: ["Azure Policy","Azure Resource Manager","Azure Migrate","Azure Resource Manager templates (ARM)"],
+          answer: 3,
+          reason: "VM permet le déploiement rapide d’environnements virtualisés."
+        },
+        {
+          q: "Quelle offre de sécurité contrôle l’accès aux ressources Azure ?",
+          opts: ["RBAC","CDN","Blob Storage","Azure DNS"],
+          answer: 0,
+          reason: "Role-Based Access Control permet une gestion fine des permissions."
+        },
+        {
+          q: "Quel concept Azure permet d’augmenter ou de réduire automatiquement les ressources selon la demande ?",
+          opts: ["Élasticité","Disponibilité","Réplication","Sécurité"],
+          answer: 0,
+          reason: "L’élasticité est la capacité de s’adapter aux besoins instantanés."
+        },
+        {
+          q: "Qu’est-ce qu’une région Azure ?",
+          opts: ["Un service spécifique","Une zone géographique avec des datacenters","Un type de VM","Un niveau de sécurité"],
+          answer: 1,
+          reason: "Les régions déterminent où sont hébergées vos ressources."
+        },
+        {
+          q: "Le stockage de fichiers dans Azure est proposé par :",
+          opts: ["Azure Queue","Azure File","Azure Function","Azure SQL"],
+          answer: 1,
+          reason: "Azure File est le service de fichiers partagé et géré."
+        },
+        {
+          q: "Pour surveiller le trafic réseau dans Azure, on utilise :",
+          opts: ["Azure Network Watcher","Azure SQL","Azure Key Vault","Azure Cost Management"],
+          answer: 0,
+          reason: "Ce service surveille le trafic réseau et aide au diagnostic."
+        },
+        {
+          q: "Qu’est-ce que le SLA dans Azure ?",
+          opts: ["Service Level Agreement","Système Linux Azure","Stockage Local Azure","Sécurité Logicielle Avancée"],
+          answer: 0,
+          reason: "Le SLA garantit la disponibilité minimale des services Microsoft."
+        },
+        {
+          q: "Azure offre la haute disponibilité en :",
+          opts: ["Sauvegardant chaque fichier sur un serveur unique","Répliquant les ressources sur plusieurs zones","Ajoutant des licences utilisateurs","Éteignant les VM la nuit"],
+          answer: 1,
+          reason: "La haute disponibilité s’obtient par redondance géographique."
+        },
+        {
+          q: "Quel composant est essentiel pour gérer les secrets et clés ?",
+          opts: ["Azure Policy","Azure Key Vault","Azure File","Azure SQL"],
+          answer: 1,
+          reason: "Key Vault stocke et protège les mots de passe, clés et secrets."
+        },
+        {
+          q: "Pour créer des applications serverless, on utilise :",
+          opts: ["Azure Container Instances","Azure Functions","Azure VM","Azure DevTest Labs"],
+          answer: 1,
+          reason: "Azure Functions exécute du code à la demande sans gérer de serveur."
+        },
+        {
+          q: "Quel service permet l’analyse en temps réel de données volumineuses ?",
+          opts: ["Azure Stream Analytics","Azure Blob Storage","Azure File","Azure App Service"],
+          answer: 0,
+          reason: "Ce service traite et analyse des flux de données en temps réel."
+        },
+        {
+          q: "Pour le monitoring de ressources, l’outil recommandé est :",
+          opts: ["Azure Monitor","Azure Queue","Azure Key Vault","Azure Container Instances"],
+          answer: 0,
+          reason: "Centralise la collecte, l’analyse et l’alerting sur les ressources."
+        },
+        {
+          q: "Azure Logic Apps sert à :",
+          opts: ["Héberger des VM","Simplifier le développement de workflows","Fournir du stockage","Contrôler les identités"],
+          answer: 1,
+          reason: "Logic Apps permet de créer des processus métier automatisés."
+        },
+        {
+          q: "Le rôle des groupes de ressources dans Azure est :",
+          opts: ["Regrouper et gérer les ressources liées","Fournir du stockage","Surveiller la sécurité uniquement","Remplacer les abonnements"],
+          answer: 0,
+          reason: "Organisation logique des ressources pour administration facilitée."
+        },
+        {
+          q: "Azure Virtual Network sert à :",
+          opts: ["Créer des réseaux privés dans le cloud","Fournir du stockage","Contrôler la facturation","Déployer des applications serverless"],
+          answer: 0,
+          reason: "Permet la communication sécurisée entre ressources Azure."
+        },
+        {
+          q: "Pour gérer le cycle de vie des ressources, on utilise :",
+          opts: ["Azure Resource Manager","Azure SQL","Azure Blob","Azure DevTest Labs"],
+          answer: 0,
+          reason: "Azure Resource Manager déploie, met à jour et gère les ressources."
+        },
+        {
+          q: "Quelle solution Azure permet l’orchestration de conteneurs ?",
+          opts: ["Azure Kubernetes Service (AKS)","Azure Stream Analytics","Azure Functions","Azure Web Apps"],
+          answer: 0,
+          reason: "AKS gère le déploiement et la gestion des conteneurs Docker."
+        },
+        {
+          q: "Pour sauvegarder des bases de données relationnelles dans Azure, on utilise :",
+          opts: ["Azure Backup","Azure Blob Storage","Azure Queue","Azure VM"],
+          answer: 0,
+          reason: "Service PaaS pour bases de données relationnelles SQL."
+        },
+        {
+          q: "Lequel n’est PAS un type de cloud ?",
+          opts: ["Public","Privé","Hybride","Souterrain"],
+          answer: 3,
+          reason: "Les types de cloud sont public, privé ou hybride."
+        },
+        {
+          q: "L’outil pour automatiser les déploiements dans Azure est :",
+          opts: ["Azure DevOps","Azure Blob","Azure DNS","Azure Table"],
+          answer: 0,
+          reason: "Azure DevOps propose pipelines CI/CD pour automatiser les déploiements."
+        },
+        {
+          q: "Quelle solution Azure propose du stockage à faible coût pour données rarement utilisées ?",
+          opts: ["Azure Archive Blob Storage","Azure File","Azure SQL","Azure Table"],
+          answer: 0,
+          reason: "Optimisé pour la conservation longue durée à faible coût."
+        },
+        {
+          q: "Azure Multi-Factor Authentication sert à :",
+          opts: ["Protéger l’accès utilisateur","Déployer des machines virtuelles","Stocker des fichiers","Analyser des logs"],
+          answer: 0,
+          reason: "Azure MFA, intégré à Azure Active Directory, ajoute un second facteur pour renforcer la sécurité des connexions."
+        },
+        {
+          q: "Qu’est-ce qu’une zone de disponibilité ?",
+          opts: ["Un espace de stockage dédié","Un datacenter indépendant dans une région","Un espace réseau isolé","Un serveur local"],
+          answer: 1,
+          reason: "Les zones de disponibilité garantissent la résilience des applications."
+        },
+        {
+          q: "Azure Policy permet :",
+          opts: ["D’appliquer des règles sur les ressources","De surveiller la facturation","De créer des VM","D’héberger des applications web"],
+          answer: 0,
+          reason: "Contrôle la conformité de vos ressources via des politiques."
+        },
+        {
+          q: "Application Gateway sert à :",
+          opts: ["Appliquer du routage applicatif et répartir la charge","Stocker des documents","Contrôler l’accès utilisateur","Gérer la facturation"],
+          answer: 0,
+          reason: "Fournit une répartition de charge de niveau application (Layer 7)."
+        },
+        {
+          q: "Azure Advisor permet :",
+          opts: ["De donner des recommandations pour optimiser Azure","De sécuriser les identités","De créer des VM","De restaurer des bases de données"],
+          answer: 0,
+          reason: "Conseille sur la performance, sécurité et optimisation des ressources."
+        },
+        {
+          q: "Le service pour l’analyse avancée de logs :",
+          opts: ["Azure Log Analytics","Azure Table","Azure Monitor","Azure CDN"],
+          answer: 0,
+          reason: "Collecte, indexe et analyse les logs des ressources Azure."
+        },
+        {
+          q: "Azure CDN est utilisé pour :",
+          opts: ["Optimiser la distribution de contenu web","Sauvegarder les VM","Surveiller le réseau","Gérer les identités"],
+          answer: 0,
+          reason: "Le CDN accélère l’accès aux contenus statiques pour les utilisateurs."
+        },
+        {
+          q: "Le principe de sécurité \"Zero Trust\" sur Azure implique :",
+          opts: ["Ne jamais faire confiance, toujours vérifier","Toujours faire confiance à l’utilisateur","Ne pas utiliser d’authentification","Ignorer le chiffrement"],
+          answer: 0,
+          reason: "Zero Trust exige une vérification systématique de chaque accès."
+        },
+        {
+          q: "Azure Backup sert à :",
+          opts: ["Sauvegarder des ressources et restaurer en cas de pertes","Déployer des VM","Optimiser la facturation","Gérer des réseaux"],
+         
       ar: [
         {
           q: "أي من خدمات Azure تُستخدم أساسًا لاستضافة الأجهزة الافتراضية؟",
